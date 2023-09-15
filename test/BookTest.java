@@ -15,11 +15,20 @@ import static org.junit.Assert.assertEquals;
 
 public class BookTest {
     /**
+     * Default constructor for BookTest.
+     */
+    public BookTest() {
+        // No special initialization needed.
+    }
+    /**
      * created two objects: main.Book from main.Book and john from main.Person.
      */
     private Book Educated;
     private Person john;
 
+    /**
+     * A JUnit test class for the setUp() method.
+     */
     @Before
     public void setUp() {
         john = new Person("john", "doe", 1989);
